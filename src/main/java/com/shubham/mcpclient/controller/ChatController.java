@@ -17,6 +17,6 @@ public class ChatController {
 
     @GetMapping("/ask")
     public String ask(@RequestParam String message) {
-        return mcpClientService.sendMessage(message);
+        return mcpClientService.processInput(message);
     }
 }
